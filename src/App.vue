@@ -1,29 +1,17 @@
-<!--  html이 들어올 자리 -->
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <GoogleMap/>
+  <leftSideBar/>
 </template>
 
-<!-- // 자바스크립트가 들어올 자리 -->
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import GoogleMap from './components/GoogleMapVue.vue'
+import leftSideBar from './components/leftSideBar.vue'
 
-export default {
+export default ({
   name: 'App',
   components: {
-    HelloWorld
+    GoogleMap,
+    leftSideBar
   }
-}
+})
 </script>
-
-<!-- // 스타일이 들어올 자리 -->
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
